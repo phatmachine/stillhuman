@@ -1,0 +1,195 @@
+{
+  "$schema_note": "Every image on the site must have an entry here with status 'approved' before it ships. The build should fail if a page references an image id that is missing, unapproved, or lacks credit/licence. Slots below match the IMG-xx placeholders in the prototype.",
+  "rules": {
+    "licence": "Only images whose licence permits this use: Copernicus Sentinel data (free, attribution required); UNOSAT maps (reproduce with attribution); Wikimedia Commons under CC BY / CC BY-SA / public domain; UN, UNRWA, WHO, UNICEF photos only after checking each image's stated terms or getting written permission. Never use wire or stock photos (Reuters, AP, AFP, Getty, Magnific/Freepik) without a paid licence on file.",
+    "verification": "For every photo: confirm date and place (EXIF if present, reverse-image search, geolocation against Sentinel-2/Google Earth), confirm the original publisher, and record who checked it and when.",
+    "dignity": "No graphic injury or dead bodies. No identifiable children unless the original publisher states consent was obtained. Prefer places, objects and wide shots: an empty classroom, a water queue, rubble with a toy, a tent school.",
+    "credit": "Credit line shown on the image or in its caption, exactly as the licence requires."
+  },
+  "fields": [
+    "id",
+    "chapter",
+    "subject_brief",
+    "file",
+    "alt",
+    "caption",
+    "credit",
+    "licence",
+    "licence_url",
+    "source_url",
+    "publisher",
+    "date_taken",
+    "location",
+    "verification.method",
+    "verification.checked_by",
+    "verification.checked_on",
+    "consent",
+    "status"
+  ],
+  "slots": [
+    {
+      "id": "IMG-CHILDREN-BG",
+      "chapter": "children",
+      "file": "images/children-bg.jpg",
+      "position": "35% 55%",
+      "use": "background-size:cover; filter:grayscale(1); opacity:.3; aria-hidden; credit line top-left 'Photo: NAME / Unsplash'.",
+      "source_url": "https://unsplash.com/photos/a-group-of-people-standing-next-to-a-pile-of-rubble-703Sobdug5o",
+      "photographer": "Mohammed Ibrahim (@mohammed_ibrahim_mi)",
+      "publisher": "Unsplash",
+      "published": "2025-02-18",
+      "place": "Gaza Strip",
+      "caption_at_source": "Children among the rubble of their house",
+      "licence": "Unsplash License (free commercial use, credit given voluntarily)",
+      "consent": "Unsplash licence covers copyright only; it gives no model release. Children's faces are identifiable: confirm consent with the photographer, or blur faces before launch (project rule).",
+      "status": "in prototype; launch blocked on consent"
+    },
+    {
+      "id": "IMG-HOMES-BG",
+      "chapter": "homes",
+      "file": "images/homes-bg.jpg",
+      "position": "60% 50%",
+      "use": "background-size:cover; filter:grayscale(1); opacity:.3; aria-hidden; credit line top-left 'Photo: NAME / Unsplash'.",
+      "source_url": "https://unsplash.com/photos/a-large-pile-of-rubble-next-to-a-dirt-road-FYBQe6hFtRA",
+      "photographer": "Emad El Byed (@emad_el_bayed)",
+      "publisher": "Unsplash",
+      "published": "2023-12-08",
+      "place": "Gaza Strip",
+      "licence": "Unsplash License",
+      "note": "Owner supplied two street-rubble photos; the one used (collapsed building under a green tarp, dirt road lower left) is believed to match this URL. Confirm against the source page.",
+      "status": "in prototype; confirm match"
+    },
+    {
+      "id": "IMG-HOSPITALS-BG",
+      "chapter": "hospitals",
+      "file": "images/hospitals-bg.jpg",
+      "position": "50% 55%",
+      "use": "background-size:cover; filter:grayscale(1); opacity:.3; aria-hidden; credit line top-left 'Photo: NAME / Unsplash'.",
+      "source_url": "https://unsplash.com/photos/a-large-fire-is-burning-in-a-city-maQyXPGLfMc",
+      "photographer": "Mohammed Ibrahim (@mohammed_ibrahim_mi)",
+      "publisher": "Unsplash",
+      "published": "2025-02-22",
+      "place": "Gaza",
+      "caption_at_source": "A huge explosion in a building as a result of a bombing by Israeli warplanes",
+      "licence": "Unsplash License",
+      "note": "Shows an air strike on the city skyline, not a hospital. Used as atmosphere only; never caption it as a hospital strike.",
+      "status": "in prototype"
+    },
+    {
+      "id": "SAT-BEFORE",
+      "chapter": "satellite",
+      "subject_brief": "Rafah, satellite view before October 2023, same framing and zoom as SAT-AFTER. Full-screen.",
+      "suggested_sources": [
+        "Google Earth Pro historical imagery",
+        "Copernicus Browser (Sentinel-2) as fallback"
+      ],
+      "credit_template": "Imagery: Google Maps (linked) + provider line as shown by Google, e.g. 'Imagery ©2023 Airbus, Maxar Technologies'",
+      "status": "needed",
+      "source_url": "https://maps.app.goo.gl/ZG2dKQuc7gzBPpsdA"
+    },
+    {
+      "id": "SAT-AFTER",
+      "chapter": "satellite",
+      "subject_brief": "Rafah, current Google Maps satellite view at the owner's link. Full-screen.",
+      "suggested_sources": [
+        "Google Maps / Google Earth"
+      ],
+      "credit_template": "Imagery: Google Maps (linked) + provider line and year as shown by Google",
+      "status": "needed",
+      "source_url": "https://maps.app.goo.gl/ZG2dKQuc7gzBPpsdA"
+    },
+    {
+      "id": "IMG-01",
+      "chapter": "children",
+      "subject_brief": "Wide shot: a tent classroom or a school bag in rubble. No faces of injured children.",
+      "suggested_sources": [
+        "UNICEF State of Palestine media",
+        "Wikimedia Commons (CC)"
+      ],
+      "status": "needed"
+    },
+    {
+      "id": "IMG-02",
+      "chapter": "preschool",
+      "subject_brief": "A damaged kindergarten, ideally one listed in Save the Children's assessment.",
+      "suggested_sources": [
+        "Save the Children media library (request permission)",
+        "Wikimedia Commons"
+      ],
+      "status": "needed"
+    },
+    {
+      "id": "IMG-03",
+      "chapter": "school",
+      "subject_brief": "First day back, Sep 2026: children in a tent classroom.",
+      "suggested_sources": [
+        "UNICEF / UNRWA (check terms)"
+      ],
+      "status": "needed"
+    },
+    {
+      "id": "IMG-04",
+      "chapter": "home",
+      "subject_brief": "Sentinel-2 true colour, same area, June 2023 vs June 2025 (e.g. Jabalia). Use as a before/after wipe.",
+      "suggested_sources": [
+        "Copernicus Browser / Sentinel Hub EO Browser"
+      ],
+      "credit_template": "Contains modified Copernicus Sentinel data [YEAR], processed by Sentinel Hub",
+      "status": "needed"
+    },
+    {
+      "id": "IMG-05",
+      "chapter": "family",
+      "subject_brief": "None by design: a black pause before the number.",
+      "status": "not-required"
+    },
+    {
+      "id": "IMG-06",
+      "chapter": "hospital",
+      "subject_brief": "Exterior of a damaged hospital, e.g. Al-Shifa.",
+      "suggested_sources": [
+        "WHO EMRO / WHO oPt media (check terms)",
+        "UN Photo"
+      ],
+      "status": "needed"
+    },
+    {
+      "id": "IMG-07",
+      "chapter": "helped",
+      "subject_brief": "WHO medical evacuation convoy at Rafah, 2026.",
+      "suggested_sources": [
+        "UN AV Library / WHO (UNifeed stills, check terms)"
+      ],
+      "status": "needed"
+    },
+    {
+      "id": "IMG-08",
+      "chapter": "water",
+      "subject_brief": "A water distribution point with jerrycans; no identifiable children without consent.",
+      "suggested_sources": [
+        "UNICEF",
+        "UNRWA"
+      ],
+      "status": "needed"
+    },
+    {
+      "id": "IMG-09",
+      "chapter": "wheelchairs",
+      "subject_brief": "Rehabilitation session or a stack of undelivered wheelchairs; consent required for any patient.",
+      "suggested_sources": [
+        "WHO EMRO",
+        "Humanity & Inclusion (request permission)"
+      ],
+      "status": "needed"
+    },
+    {
+      "id": "IMG-10",
+      "chapter": "force",
+      "subject_brief": "UNOSAT damage-density map of the Gaza Strip, latest assessment.",
+      "suggested_sources": [
+        "unosat.org/products"
+      ],
+      "credit_template": "Map: UNOSAT / UNITAR, [assessment name and date]",
+      "status": "needed"
+    }
+  ]
+}

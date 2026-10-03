@@ -1,0 +1,472 @@
+{
+  "$schema_note": "Single source of truth for every number on the site. Components must render values from here by id; never hard-code a figure in copy. 'tag' drives the source badge: un | ref | gaza | israel. 'verify' = true means re-check against the primary source before launch.",
+  "compiled": "2026-10-03",
+  "metrics": [
+    {
+      "id": "children_identified_killed",
+      "value": 21283,
+      "label": "Children killed and identified by name",
+      "as_of": "2025-12-31 (identification); published 2026-09-23",
+      "tag": "gaza",
+      "source": {
+        "name": "OCHA, Gaza Reported Impact Snapshot (MoH Gaza figures)",
+        "url": "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_23_September_2026.pdf"
+      }
+    },
+    {
+      "id": "killed_total",
+      "value": 73922,
+      "label": "Palestinians reported killed since 7 Oct 2023",
+      "as_of": "2026-09-23",
+      "tag": "gaza",
+      "source": {
+        "name": "OCHA Snapshot (MoH Gaza)",
+        "url": "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_23_September_2026.pdf"
+      }
+    },
+    {
+      "id": "injured_total",
+      "value": 174995,
+      "label": "Reported injured",
+      "as_of": "2026-09-23",
+      "tag": "gaza",
+      "source": {
+        "name": "OCHA Snapshot (MoH Gaza)",
+        "url": "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_23_September_2026.pdf"
+      }
+    },
+    {
+      "id": "identified_breakdown",
+      "value": {
+        "children": 21283,
+        "women": 10983,
+        "elderly": 5100,
+        "men": 34078,
+        "total_identified": 71444
+      },
+      "as_of": "2025-12-31",
+      "tag": "gaza",
+      "source": {
+        "name": "OCHA Snapshot (MoH Gaza)",
+        "url": "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_23_September_2026.pdf"
+      }
+    },
+    {
+      "id": "prewar_population",
+      "value": 2200000,
+      "label": "Gaza pre-war population",
+      "tag": "un",
+      "source": {
+        "name": "UN (OCHA)",
+        "url": "https://www.ochaopt.org"
+      }
+    },
+    {
+      "id": "children_4_months",
+      "value": 12300,
+      "label": "Children killed in Gaza, Oct 2023 – Feb 2024",
+      "tag": "un",
+      "source": {
+        "name": "UNRWA Commissioner-General, 12 Mar 2024",
+        "url": "https://turkiye.un.org/en/node/263401"
+      }
+    },
+    {
+      "id": "children_world_4_years",
+      "value": 12193,
+      "label": "Children killed in all conflicts worldwide, 2019–2022",
+      "tag": "un",
+      "source": {
+        "name": "UNRWA Commissioner-General citing UN figures",
+        "url": "https://turkiye.un.org/en/node/263401"
+      }
+    },
+    {
+      "id": "orphans",
+      "value": 58000,
+      "label": "Children who lost one or both parents (58,000+)",
+      "as_of": "2025-12",
+      "tag": "un",
+      "source": {
+        "name": "UNICEF via OCHA Snapshot",
+        "url": "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_23_September_2026.pdf"
+      }
+    },
+    {
+      "id": "oecd_preschool_rate",
+      "value": 0.89,
+      "label": "Children aged 3–5 in early education, OECD average",
+      "as_of": "2023",
+      "tag": "ref",
+      "source": {
+        "name": "OECD Family Database PF3.2",
+        "url": "https://webfs.oecd.org/els-com/Family_Database/PF3_2_Enrolment_childcare_preschool.pdf"
+      }
+    },
+    {
+      "id": "gaza_kindergartens_lost",
+      "value": {
+        "share": 0.86,
+        "count": 563
+      },
+      "label": "Kindergartens destroyed, damaged or unreachable",
+      "as_of": "2026-08",
+      "tag": "ref",
+      "source": {
+        "name": "Save the Children rapid damage assessment",
+        "url": "https://www.savethechildren.ca/article/education-for-1-5-million-palestinian-children-disrupted-for-fourth-academic-year/"
+      }
+    },
+    {
+      "id": "kindergarten_children_lost_access",
+      "value": 70000,
+      "label": "Young children who lost access to kindergarten",
+      "tag": "ref",
+      "source": {
+        "name": "Theirworld",
+        "url": "https://theirworld.org/news/theirworld-opens-12-early-learning-centres-in-gaza-as-new-report-reveals-early-childhood-development-crisis/"
+      }
+    },
+    {
+      "id": "england_covid_closure_weeks",
+      "value": 19,
+      "label": "Weeks of national school closure in England (10 in 2020 + 9 in 2021)",
+      "tag": "ref",
+      "source": {
+        "name": "Institute for Fiscal Studies",
+        "url": "https://ifs.org.uk/publications/home-learning-experiences-through-covid-19-pandemic"
+      },
+      "notes": "No longer shown on the site (owner removed the COVID comparison, 3 Oct 2026)."
+    },
+    {
+      "id": "gaza_weeks_without_school",
+      "value": 154,
+      "label": "Weeks without regular in-person school, 7 Oct 2023 – 19 Sep 2026",
+      "derived": "(2026-09-19 − 2023-10-07) = 1,078 days ÷ 7",
+      "tag": "ref",
+      "source": {
+        "name": "Reuters, 21 Sep 2026 (restart date)",
+        "url": "https://gvwire.com/2026/09/21/gaza-students-return-to-in-person-schooling-for-first-time-in-three-years/"
+      }
+    },
+    {
+      "id": "school_buildings_rebuild",
+      "value": {
+        "count": 526,
+        "of": 564,
+        "share": 0.93
+      },
+      "label": "School buildings needing full reconstruction or major rehabilitation",
+      "tag": "un",
+      "source": {
+        "name": "Education Cluster via OCHA Snapshot",
+        "url": "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_23_September_2026.pdf"
+      }
+    },
+    {
+      "id": "gaza_school_age_need",
+      "value": 657200,
+      "label": "School-age children needing education support, 2026/27",
+      "tag": "un",
+      "source": {
+        "name": "Education Cluster via OCHA Snapshot",
+        "url": "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_23_September_2026.pdf"
+      }
+    },
+    {
+      "id": "scotland_pupils",
+      "value": 695923,
+      "label": "Pupils in Scotland's publicly funded schools",
+      "as_of": "2025",
+      "tag": "ref",
+      "source": {
+        "name": "Scottish Government",
+        "url": "https://www.gov.scot/news/pupil-and-teacher-characteristics-2025-published/"
+      }
+    },
+    {
+      "id": "homes_damaged",
+      "value": {
+        "count": 371888,
+        "of": 485361,
+        "share": 0.766
+      },
+      "label": "Housing units destroyed or damaged",
+      "tag": "un",
+      "source": {
+        "name": "UN / EU / World Bank Gaza RDNA (Apr 2026)",
+        "url": "https://palestine.un.org/en/node/314095"
+      }
+    },
+    {
+      "id": "structures_damaged_share",
+      "value": 0.82,
+      "label": "Share of all structures damaged or destroyed",
+      "as_of": "2026-06-16",
+      "tag": "un",
+      "source": {
+        "name": "UNOSAT via OCHA Snapshot",
+        "url": "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_23_September_2026.pdf"
+      }
+    },
+    {
+      "id": "households_in_tents",
+      "value": 0.65,
+      "label": "Assessed households in tents or makeshift shelters",
+      "as_of": "2026-08",
+      "tag": "un",
+      "source": {
+        "name": "Shelter Cluster via OCHA Snapshot",
+        "url": "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_23_September_2026.pdf"
+      }
+    },
+    {
+      "id": "health_facilities",
+      "value": {
+        "fully": 42,
+        "partial": 273,
+        "not": 355,
+        "total": 670
+      },
+      "as_of": "2026-10-03",
+      "tag": "un",
+      "source": {
+        "name": "oPt Health Cluster Unified Health Dashboard (WHO)",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiODAxNTYzMDYtMjQ3YS00OTMzLTkxMWQtOTU1NWEwMzE5NTMwIiwidCI6ImY2MTBjMGI3LWJkMjQtNGIzOS04MTBiLTNkYzI4MGFmYjU5MCIsImMiOjh9"
+      }
+    },
+    {
+      "id": "medicines_zero_stock",
+      "value": 0.46,
+      "label": "Essential medicines at zero stock",
+      "as_of": "2026-03-04",
+      "tag": "un",
+      "source": {
+        "name": "WHO Flash Update (citing MoH)",
+        "url": "https://reliefweb.int/report/occupied-palestinian-territory/who-occupied-palestinian-territory-flash-update-4-march-2026"
+      }
+    },
+    {
+      "id": "health_attacks_gaza",
+      "value": {
+        "attacks": 1006,
+        "facilities": 818,
+        "ambulances": 404,
+        "killed": 1007,
+        "workers_detained": 324
+      },
+      "as_of": "2026-09-09",
+      "tag": "un",
+      "source": {
+        "name": "Health Cluster dashboard, Attacks on Health Care",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiODAxNTYzMDYtMjQ3YS00OTMzLTkxMWQtOTU1NWEwMzE5NTMwIiwidCI6ImY2MTBjMGI3LWJkMjQtNGIzOS04MTBiLTNkYzI4MGFmYjU5MCIsImMiOjh9"
+      },
+      "notes": "Gaza attacks = 2,069 oPt total − 1,063 West Bank."
+    },
+    {
+      "id": "cancer_untreated",
+      "value": 1000,
+      "label": "Cancer patients unable to complete treatment (about)",
+      "as_of": "2026-06",
+      "tag": "gaza",
+      "source": {
+        "name": "Gaza MoH via TRT World",
+        "url": "https://www.trtworld.com/article/fca681c6a320"
+      }
+    },
+    {
+      "id": "dialysis_without_supplies",
+      "value": 650,
+      "label": "Dialysis patients without kidney-care supplies",
+      "as_of": "2026-06",
+      "tag": "gaza",
+      "source": {
+        "name": "Gaza MoH via TRT World",
+        "url": "https://www.trtworld.com/article/fca681c6a320"
+      }
+    },
+    {
+      "id": "patients_needing_evac",
+      "value": 18500,
+      "label": "Patients needing care no longer available in Gaza",
+      "as_of": "2026-02-03",
+      "tag": "un",
+      "source": {
+        "name": "WHO briefing",
+        "url": "https://www.unognewsroom.org/story/en/2985/rafah-medical-evacuations-who/8901"
+      }
+    },
+    {
+      "id": "died_awaiting_evac",
+      "value": 1092,
+      "label": "Patients known to have died awaiting evacuation, Jul 2024 – 28 Nov 2025",
+      "tag": "un",
+      "source": {
+        "name": "WHO Director-General citing MoH",
+        "url": "https://en.hespress.com/127690-127690.html"
+      }
+    },
+    {
+      "id": "evac_destinations_who",
+      "value": {
+        "Egypt": 4214,
+        "Jordan": 690,
+        "UAE": 635,
+        "Italy": 172,
+        "Spain": 85,
+        "Romania": 57,
+        "United Kingdom": 53,
+        "Saudi Arabia": 31,
+        "United States": 28,
+        "Turkey": 25,
+        "Belgium": 22,
+        "Norway": 22,
+        "Switzerland": 20,
+        "France": 14,
+        "Ireland": 14,
+        "Greece": 10,
+        "Slovenia": 8,
+        "Netherlands": 5,
+        "Malta": 4,
+        "Mexico": 3,
+        "total": 6121
+      },
+      "as_of": "2026-09-27",
+      "tag": "un",
+      "source": {
+        "name": "Health Cluster dashboard, Medical Evacuation (WHO-facilitated missions)",
+        "url": "https://app.powerbi.com/view?r=eyJrIjoiODAxNTYzMDYtMjQ3YS00OTMzLTkxMWQtOTU1NWEwMzE5NTMwIiwidCI6ImY2MTBjMGI3LWJkMjQtNGIzOS04MTBiLTNkYzI4MGFmYjU5MCIsImMiOjh9"
+      }
+    },
+    {
+      "id": "uk_water_per_person",
+      "value": 142,
+      "unit": "litres/day",
+      "tag": "ref",
+      "source": {
+        "name": "Water UK (Waterwise)",
+        "url": "https://www.water.org.uk/news-item/vast-majority-of-brits-have-no-idea-how-much-water-they-use-each-day/"
+      }
+    },
+    {
+      "id": "germany_water_per_person",
+      "value": 121,
+      "unit": "litres/day",
+      "tag": "ref",
+      "source": {
+        "name": "Water UK",
+        "url": "https://www.water.org.uk/news-item/vast-majority-of-brits-have-no-idea-how-much-water-they-use-each-day/"
+      }
+    },
+    {
+      "id": "emergency_water_min",
+      "value": 15,
+      "unit": "litres/day",
+      "tag": "un",
+      "source": {
+        "name": "Humanitarian minimum standard cited by WASH Cluster",
+        "url": "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_23_September_2026.pdf"
+      }
+    },
+    {
+      "id": "households_below_15l",
+      "value": 0.31,
+      "also": {
+        "below_6l_drinking": 0.57
+      },
+      "as_of": "2026-08",
+      "tag": "un",
+      "source": {
+        "name": "WASH Cluster via OCHA Snapshot",
+        "url": "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_23_September_2026.pdf"
+      }
+    },
+    {
+      "id": "mobility_aids",
+      "value": {
+        "needed": 32835,
+        "delivered": 12146
+      },
+      "as_of": "2025-01 to 2026-05",
+      "tag": "un",
+      "source": {
+        "name": "WHO, Estimating Trauma Rehabilitation Needs in Gaza",
+        "url": "https://www.emro.who.int/images/stories/palestine/Estimating_Trauma_Rehabilitation_Needs_in_Gaza_2026.pdf"
+      }
+    },
+    {
+      "id": "life_changing_injuries",
+      "value": 43011,
+      "tag": "un",
+      "source": {
+        "name": "WHO, May 2026",
+        "url": "https://www.emro.who.int/images/stories/palestine/Estimating_Trauma_Rehabilitation_Needs_in_Gaza_2026.pdf"
+      }
+    },
+    {
+      "id": "amputees_fitted",
+      "value": {
+        "assessed": 2277,
+        "fitted": 502
+      },
+      "tag": "un",
+      "source": {
+        "name": "WHO, May 2026",
+        "url": "https://www.emro.who.int/images/stories/palestine/Estimating_Trauma_Rehabilitation_Needs_in_Gaza_2026.pdf"
+      }
+    },
+    {
+      "id": "bombs_first_6_days",
+      "value": 6000,
+      "label": "Bombs dropped on Gaza, 7–12 Oct 2023 (about)",
+      "tag": "israel",
+      "verify": true,
+      "source": {
+        "name": "Israeli Air Force statement, 12 Oct 2023",
+        "url": "TODO: link a primary or wire report"
+      }
+    },
+    {
+      "id": "us_afghanistan_2019_weapons",
+      "value": 7423,
+      "label": "Weapons released by US forces in Afghanistan, 2019",
+      "tag": "ref",
+      "verify": true,
+      "source": {
+        "name": "US Air Forces Central airpower summary",
+        "url": "TODO: link AFCENT summary"
+      }
+    },
+    {
+      "id": "targets_year_one",
+      "value": 40000,
+      "label": "Targets struck in Gaza in the first year (40,000+)",
+      "tag": "israel",
+      "source": {
+        "name": "Israeli military, 7 Oct 2024",
+        "url": "https://deccanherald.com/amp/story/world%2Fin-one-year-of-war-israel-strikes-40000-hamas-targets-in-gaza-3222019"
+      }
+    },
+    {
+      "id": "land_reachable",
+      "value": 0.4,
+      "label": "Land open to Palestinians: under 40% (down from ~47% in Oct 2025)",
+      "tag": "un",
+      "source": {
+        "name": "OCHA via DevelopmentAid, Sep 2026",
+        "url": "https://www.developmentaid.org/news-stream/post/210534/gazas-yellow-line-tightens-as-displacement-deepens-un-reports"
+      }
+    },
+    {
+      "id": "caterpillar_d9_sale",
+      "value": 295000000,
+      "unit": "USD",
+      "label": "Caterpillar D9 sale approved by the US government, 28 Feb 2025; Congressional review waived",
+      "tag": "ref",
+      "source": {
+        "name": "US Defense Security Cooperation Agency",
+        "url": "https://www.dsca.mil/Press-Media/Major-Arms-Sales/Article-Display/Article/4088243/israel-caterpillar-d9-bulldozers"
+      }
+    }
+  ]
+}

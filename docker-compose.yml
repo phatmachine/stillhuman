@@ -53,6 +53,45 @@ services:
       - traefik-proxy
       - internal
 
+  # Static Gaza site, served outside Payload at https://stillhuman.si/seeing-is-believing/
+  # Content comes from gaza/prototype in the repo; restart the service to pick up changes.
+  gaza:
+    image: nginx:alpine
+    command:
+      - sh
+      - -c
+      - |
+        set -e
+        apk add --no-cache git
+        git clone --depth 1 https://github.com/phatmachine/stillhuman.git /tmp/repo
+        cp -a /tmp/repo/gaza/prototype/. /usr/share/nginx/html/
+        printf 'server {\n  listen 80;\n  root /usr/share/nginx/html;\n  index scroll.html;\n  add_header X-Robots-Tag "noindex, nofollow" always;\n  location / { try_files $$uri $$uri/ =404; }\n}\n' > /etc/nginx/conf.d/default.conf
+        exec nginx -g 'daemon off;'
+    expose:
+      - "80"
+    restart: unless-stopped
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-proxy
+      - traefik.http.routers.gaza-slash.rule=Host(`stillhuman.si`) && Path(`/seeing-is-believing`)
+      - traefik.http.routers.gaza-slash.priority=200
+      - traefik.http.routers.gaza-slash.entrypoints=websecure
+      - traefik.http.routers.gaza-slash.tls.certresolver=letsencrypt
+      - traefik.http.routers.gaza-slash.middlewares=gaza-slash-redirect
+      - traefik.http.routers.gaza-slash.service=gaza
+      - traefik.http.middlewares.gaza-slash-redirect.redirectregex.regex=^(https://stillhuman\.si/seeing-is-believing)$$
+      - traefik.http.middlewares.gaza-slash-redirect.redirectregex.replacement=$${1}/
+      - traefik.http.routers.gaza.rule=Host(`stillhuman.si`) && PathPrefix(`/seeing-is-believing/`)
+      - traefik.http.routers.gaza.priority=100
+      - traefik.http.routers.gaza.entrypoints=websecure
+      - traefik.http.routers.gaza.tls.certresolver=letsencrypt
+      - traefik.http.routers.gaza.middlewares=gaza-strip
+      - traefik.http.routers.gaza.service=gaza
+      - traefik.http.middlewares.gaza-strip.stripprefix.prefixes=/seeing-is-believing
+      - traefik.http.services.gaza.loadbalancer.server.port=80
+    networks:
+      - traefik-proxy
+
   mongo:
     image: mongo:7
     environment:

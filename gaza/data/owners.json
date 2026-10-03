@@ -1,0 +1,428 @@
+{
+  "Caterpillar": {
+    "h": [
+      [
+        "BlackRock",
+        "8.26%"
+      ],
+      [
+        "State Street",
+        "7.48%"
+      ],
+      [
+        "Vanguard",
+        "7.47%"
+      ]
+    ],
+    "d": "Mar–Jun 2026",
+    "s": [
+      [
+        "SEC 13G",
+        "https://www.sec.gov/Archives/edgar/data/0000018230/000210011926000346/primary_doc.xml"
+      ],
+      [
+        "13F",
+        "https://uk.investing.com/equities/caterpillar-ownership"
+      ]
+    ],
+    "x": [
+      [
+        "Norway’s sovereign wealth fund excluded it, Aug 2025",
+        "https://www.nbim.no/en/news-and-insights/the-press/press-releases/2025/decisions-on-exclusion/"
+      ],
+      [
+        "KLP (Norway) excluded it, Jun 2024",
+        "https://www.klp.no/en/corporate-responsibility-and-responsible-investments/exclusion-and-dialogue/exclude-caterpillar-inc.pdf"
+      ],
+      [
+        "ABP (Netherlands) sold its shares, Oct 2025",
+        "https://news.bloomberglaw.com/esg/europes-largest-pension-fund-divests-caterpillar-shares"
+      ]
+    ]
+  },
+  "Lockheed Martin": {
+    "h": [
+      [
+        "BlackRock",
+        "8.18%"
+      ],
+      [
+        "Vanguard",
+        "6.99%"
+      ]
+    ],
+    "d": "Mar–Jun 2026",
+    "s": [
+      [
+        "SEC 13G",
+        "https://www.sec.gov/Archives/edgar/data/0000936468/000210011926000760/primary_doc.xml"
+      ],
+      [
+        "13F",
+        "https://uk.investing.com/equities/lockheed-martin-ownership"
+      ]
+    ]
+  },
+  "Boeing": {
+    "h": [
+      [
+        "BlackRock",
+        "7.72%"
+      ],
+      [
+        "Vanguard",
+        "7.45%"
+      ],
+      [
+        "Fidelity",
+        "7.0%"
+      ]
+    ],
+    "d": "Dec 2025 – Sep 2026",
+    "s": [
+      [
+        "SEC 13G",
+        "https://www.sec.gov/Archives/edgar/data/0000012927/000210011926000249/primary_doc.xml"
+      ],
+      [
+        "SEC 13G",
+        "https://www.sec.gov/Archives/edgar/data/0000012927/000031506626000359/primary_doc.xml"
+      ],
+      [
+        "13F",
+        "https://uk.investing.com/equities/boeing-co-ownership"
+      ]
+    ]
+  },
+  "RTX (Raytheon)": {
+    "h": [
+      [
+        "BlackRock",
+        "8.20%"
+      ],
+      [
+        "Vanguard",
+        "7.47%"
+      ],
+      [
+        "State Street",
+        "7.08%"
+      ]
+    ],
+    "d": "Mar–Jun 2026",
+    "s": [
+      [
+        "SEC 13G",
+        "https://www.sec.gov/Archives/edgar/data/0000101829/000210011926001059/primary_doc.xml"
+      ],
+      [
+        "13F",
+        "https://ng.investing.com/equities/united-tech-ownership"
+      ]
+    ]
+  },
+  "General Dynamics": {
+    "h": [
+      [
+        "Longview Asset Management",
+        "10.0%"
+      ],
+      [
+        "Vanguard",
+        "6.88%"
+      ],
+      [
+        "BlackRock",
+        "6.4%"
+      ]
+    ],
+    "d": "Mar–Aug 2026",
+    "s": [
+      [
+        "SEC 13D",
+        "https://www.sec.gov/Archives/edgar/data/0000040533/000119312526374975/primary_doc.xml"
+      ],
+      [
+        "SEC 13G",
+        "https://www.sec.gov/Archives/edgar/data/0000040533/000210011926000531/primary_doc.xml"
+      ],
+      [
+        "SEC 13G",
+        "https://www.sec.gov/Archives/edgar/data/0000040533/000201238326002579/primary_doc.xml"
+      ]
+    ]
+  },
+  "Elbit Systems": {
+    "h": [
+      [
+        "Federmann Enterprises",
+        "41.2%"
+      ]
+    ],
+    "d": "17 Jun 2026",
+    "s": [
+      [
+        "Elbit proxy statement",
+        "https://www.elbitsystems.com/sites/default/files/2026-07/ps_01072026.pdf"
+      ]
+    ],
+    "x": [
+      [
+        "Norway’s sovereign wealth fund excluded it, Sep 2009",
+        "https://nbim.no/en/responsibility/exclusion-of-companies"
+      ],
+      [
+        "Sweden’s state pension funds AP1–AP4 excluded it, Mar 2010",
+        "https://www.ai-cio.com/news/swedish-pension-bans-israeli-defense-firm-on-ethical-grounds/"
+      ]
+    ]
+  },
+  "Rafael": {
+    "h": [
+      [
+        "State of Israel",
+        "100%"
+      ]
+    ],
+    "d": "Dec 2025",
+    "s": [
+      [
+        "Calcalist",
+        "https://www.calcalistech.com/ctechnews/article/b2xwqg57o"
+      ]
+    ]
+  },
+  "Israel Aerospace Industries": {
+    "h": [
+      [
+        "State of Israel",
+        "100%"
+      ]
+    ],
+    "d": "Aug 2026",
+    "s": [
+      [
+        "State Comptroller",
+        "https://library.mevaker.gov.il/sites/DigitalLibrary/Documents/2022/2022.3/EN/2022.3-501-IAI-Taktzir-EN.pdf"
+      ],
+      [
+        "Ynet",
+        "https://www.ynetnews.com/business/article/sjn6uuj8ze"
+      ]
+    ]
+  },
+  "Rheinmetall": {
+    "h": [
+      [
+        "BlackRock",
+        "7.33%"
+      ],
+      [
+        "Morgan Stanley",
+        "4.37%"
+      ],
+      [
+        "Goldman Sachs",
+        "4.06%"
+      ]
+    ],
+    "d": "May 2025 – Mar 2026",
+    "s": [
+      [
+        "Voting-rights notices",
+        "https://www.rheinmetall.com/en/investor-relations/intern/publications/voting-rights-announcements"
+      ]
+    ]
+  },
+  "Rolls-Royce": {
+    "h": [
+      [
+        "BlackRock",
+        "8.92%"
+      ],
+      [
+        "Capital Group",
+        "6.50%"
+      ],
+      [
+        "Fidelity",
+        "4.06%"
+      ]
+    ],
+    "d": "Jun 2026",
+    "s": [
+      [
+        "13F and filings",
+        "https://www.investing.com/equities/rolls-royce-ownership"
+      ]
+    ]
+  },
+  "BAE Systems": {
+    "h": [
+      [
+        "Capital Group",
+        "11.04%"
+      ],
+      [
+        "BlackRock",
+        "6.60%"
+      ]
+    ],
+    "d": "Jan–Oct 2026",
+    "s": [
+      [
+        "Holding notice",
+        "https://www.investegate.co.uk/announcement/rns/bae-systems--ba./holding-s-in-company/9396456"
+      ],
+      [
+        "MarketScreener",
+        "https://uk.marketscreener.com/quote/stock/BAE-SYSTEMS-PLC-9583545/company-shareholders/"
+      ]
+    ]
+  },
+  "Leonardo": {
+    "h": [
+      [
+        "Italian Government (Treasury)",
+        "30.2%"
+      ],
+      [
+        "Capital Group",
+        "5.06%"
+      ]
+    ],
+    "d": "Mar 2025",
+    "s": [
+      [
+        "Consob",
+        "https://www.consob.it/web/consob-and-its-activities/w/leonardo-spa-azionariato"
+      ]
+    ]
+  },
+  "Palantir": {
+    "h": [
+      [
+        "Founders Karp, Cohen and Thiel",
+        "up to 49.99% of votes"
+      ],
+      [
+        "Vanguard",
+        "7.28%"
+      ],
+      [
+        "BlackRock",
+        "6.34%"
+      ]
+    ],
+    "d": "Mar–Oct 2026",
+    "s": [
+      [
+        "Proxy statement",
+        "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000019/pltr-20260423.htm"
+      ],
+      [
+        "SEC 13G",
+        "https://www.sec.gov/Archives/edgar/data/0001321655/000210011926000893/primary_doc.xml"
+      ],
+      [
+        "MarketScreener",
+        "https://ca.marketscreener.com/quote/stock/PALANTIR-TECHNOLOGIES-INC-113108869/company-shareholders/"
+      ]
+    ],
+    "x": [
+      [
+        "Storebrand (Norway) excluded it, Oct 2024",
+        "https://investing.com/news/stock-market-news/thiels-palantir-dumped-by-norwegian-investor-over-work-for-israel-3683974"
+      ]
+    ]
+  },
+  "Microsoft": {
+    "h": [
+      [
+        "Vanguard",
+        "7.48%"
+      ],
+      [
+        "BlackRock",
+        "6.10%"
+      ],
+      [
+        "State Street",
+        "4.25%"
+      ]
+    ],
+    "d": "Mar–Oct 2026",
+    "s": [
+      [
+        "SEC 13G",
+        "https://www.sec.gov/Archives/edgar/data/0000789019/000210011926000820/primary_doc.xml"
+      ],
+      [
+        "MarketScreener",
+        "https://www.marketscreener.com/quote/stock/MICROSOFT-CORPORATION-4835/company-shareholders/"
+      ]
+    ]
+  },
+  "Google & Amazon": {
+    "h": [
+      [
+        "Larry Page and Sergey Brin (Google)",
+        "52.7% of votes"
+      ],
+      [
+        "Jeff Bezos (Amazon)",
+        "9.0%"
+      ],
+      [
+        "Vanguard",
+        "7.48% · 6.77%"
+      ]
+    ],
+    "d": "Sep 2025 – Apr 2026",
+    "s": [
+      [
+        "Alphabet proxy",
+        "https://www.sec.gov/Archives/edgar/data/0001652044/000130817926000342/goog-20260424.htm"
+      ],
+      [
+        "Bezos 13G",
+        "https://www.sec.gov/Archives/edgar/data/0001018724/000110465925099267/primary_doc.xml"
+      ],
+      [
+        "Vanguard 13G (Google)",
+        "https://www.sec.gov/Archives/edgar/data/0001652044/000210011926000161/primary_doc.xml"
+      ],
+      [
+        "Vanguard 13G (Amazon)",
+        "https://www.sec.gov/Archives/edgar/data/0001018724/000210011926000133/primary_doc.xml"
+      ]
+    ]
+  },
+  "Chevron": {
+    "h": [
+      [
+        "BlackRock",
+        "7.89%"
+      ],
+      [
+        "State Street",
+        "7.57%"
+      ],
+      [
+        "Vanguard",
+        "7.07%"
+      ]
+    ],
+    "d": "Mar–Jun 2026",
+    "s": [
+      [
+        "SEC 13G",
+        "https://www.sec.gov/Archives/edgar/data/0000093410/000210011926000336/primary_doc.xml"
+      ],
+      [
+        "13F",
+        "https://uk.investing.com/equities/chevron-ownership"
+      ]
+    ]
+  }
+}
