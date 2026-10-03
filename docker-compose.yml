@@ -1,15 +1,35 @@
 services:
   payload:
-    build:
-      context: ${REPO_URL}
-      dockerfile: Dockerfile
+    image: node:22-alpine
+    working_dir: /app
+    # Hostinger's deploy never runs `docker build`, so the app is fetched and built
+    # on first start into the app-data volume. To redeploy new code: empty the volume
+    # (docker volume rm stillhuman_app-data) and restart the project.
+    command:
+      - sh
+      - -c
+      - |
+        set -e
+        apk add --no-cache git libc6-compat
+        if [ ! -f package.json ]; then
+          git clone --depth 1 https://github.com/phatmachine/stillhuman.git /tmp/repo
+          cp -a /tmp/repo/app/. /app/
+        fi
+        [ -d node_modules ] || npm install --legacy-peer-deps
+        [ -d .next ] || npm run build
+        exec npm start
     environment:
       NODE_ENV: production
+      NEXT_TELEMETRY_DISABLED: "1"
+      PORT: "3000"
+      HOSTNAME: 0.0.0.0
       DATABASE_URL: mongodb://stillhuman:${MONGO_PASSWORD}@mongo:27017/stillhuman?authSource=admin
       PAYLOAD_SECRET: ${PAYLOAD_SECRET}
       NEXT_PUBLIC_SERVER_URL: https://stillhuman.si
     expose:
       - "3000"
+    volumes:
+      - app-data:/app
     depends_on:
       - mongo
     restart: unless-stopped
@@ -52,3 +72,4 @@ networks:
 
 volumes:
   mongo-data:
+  app-data:
