@@ -1,0 +1,54 @@
+services:
+  payload:
+    build:
+      context: ${REPO_URL}
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: mongodb://stillhuman:${MONGO_PASSWORD}@mongo:27017/stillhuman?authSource=admin
+      PAYLOAD_SECRET: ${PAYLOAD_SECRET}
+      NEXT_PUBLIC_SERVER_URL: https://stillhuman.si
+    expose:
+      - "3000"
+    depends_on:
+      - mongo
+    restart: unless-stopped
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=traefik-proxy
+      - traefik.http.routers.stillhuman.rule=Host(`stillhuman.si`)
+      - traefik.http.routers.stillhuman.entrypoints=websecure
+      - traefik.http.routers.stillhuman.tls.certresolver=letsencrypt
+      - traefik.http.routers.stillhuman.service=stillhuman
+      - traefik.http.routers.stillhuman-www.rule=Host(`www.stillhuman.si`)
+      - traefik.http.routers.stillhuman-www.entrypoints=websecure
+      - traefik.http.routers.stillhuman-www.tls.certresolver=letsencrypt
+      - traefik.http.routers.stillhuman-www.middlewares=stillhuman-www-redirect
+      - traefik.http.routers.stillhuman-www.service=stillhuman
+      - traefik.http.middlewares.stillhuman-www-redirect.redirectregex.regex=^https://www\.stillhuman\.si/(.*)
+      - traefik.http.middlewares.stillhuman-www-redirect.redirectregex.replacement=https://stillhuman.si/$${1}
+      - traefik.http.middlewares.stillhuman-www-redirect.redirectregex.permanent=true
+      - traefik.http.services.stillhuman.loadbalancer.server.port=3000
+    networks:
+      - traefik-proxy
+      - internal
+
+  mongo:
+    image: mongo:7
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: stillhuman
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD}
+    volumes:
+      - mongo-data:/data/db
+    restart: unless-stopped
+    networks:
+      - internal
+
+networks:
+  traefik-proxy:
+    external: true
+  internal:
+    driver: bridge
+
+volumes:
+  mongo-data:
